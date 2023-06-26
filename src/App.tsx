@@ -92,14 +92,8 @@ function App() {
         </button>
         {imageSrcWebcam && (
           <div className="rounded bg-gray-300 p-6 w-full my-8">
-            <p
-              style={{
-                whiteSpace: "nowrap",
-                overflow: "hidden",
-                textOverflow: "ellipsis",
-              }}
-            >
-              {imageSrcWebcam}
+            <p style={{ wordWrap: "break-word" }}>
+              {imageSrcWebcam.substring(0, 250)} ...
             </p>
           </div>
         )}
@@ -124,14 +118,8 @@ function App() {
         </button>
         {imageSrcBrowserCam && (
           <div className="rounded bg-gray-300 p-6 w-full my-8">
-            <p
-              style={{
-                whiteSpace: "nowrap",
-                overflow: "hidden",
-                textOverflow: "ellipsis",
-              }}
-            >
-              {imageSrcBrowserCam}
+            <p style={{ wordWrap: "break-word" }}>
+              {imageSrcBrowserCam.substring(0, 250)} ...
             </p>
           </div>
         )}
