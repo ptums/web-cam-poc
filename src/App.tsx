@@ -66,8 +66,15 @@ function App() {
   return (
     <div className="mx-auto py-12 max-w-screen-2xl flex flex-col justify-between items-center">
       <div className="w-1/2 mb-12">
-        <h1 className="mb-6 font-bold text-4xl text-center">
-          React Webcam Example
+        <h1 className="mb-6 font-bold text-center">
+          <a
+            href="https://www.npmjs.com/package/react-webcam"
+            target="_blank"
+            className="hover:underline bg-gray-300 rounded p-2 italic text-indigo-900 text-3xl mr-2 font-normal"
+          >
+            react-webcam
+          </a>
+          <span className="text-4xl">Example</span>
         </h1>
         <Webcam
           audio={false}
@@ -79,7 +86,7 @@ function App() {
         />
         <button
           onClick={webCamCapture}
-          className="bg-orange-400 hover:bg-orange-500 text-center text-white p-2 rounded my-8"
+          className="bg-orange-400 hover:bg-orange-500 text-center text-white py-3 w-36 mt-8 text-xl rounded-lg"
         >
           Capture
         </button>
@@ -98,13 +105,20 @@ function App() {
         )}
       </div>
       <div className="w-1/2">
-        <h1 className="mb-6 font-bold text-4xl text-center">
-          Media Devices & Get User Media Example
+        <h1 className="mb-6 font-bold text-center">
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia"
+            target="_blank"
+            className="hover:underline bg-gray-300 rounded p-2 italic text-indigo-900 text-3xl mr-2 font-normal"
+          >
+            navigator.mediaDevices.getUserMedia
+          </a>
+          <span className="text-4xl">Example</span>
         </h1>
         <video ref={videoRef} autoPlay />
         <button
           onClick={browserCamCapture}
-          className="bg-orange-400 hover:bg-orange-500 text-center text-white p-2 rounded my-8"
+          className="bg-orange-400 hover:bg-orange-500 text-center text-white py-3 w-36 mt-8 text-xl rounded-lg"
         >
           Capture
         </button>
